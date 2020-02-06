@@ -15,6 +15,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?q=';
 var ciudad = document.querySelector('#ciudad');
 var imgleft = document.querySelector('#imgleft');
 
+MediaKeySystemAccess
 
 
 
