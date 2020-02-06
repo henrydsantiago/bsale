@@ -7,61 +7,116 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"> 
     <!-- Librería de bootswatch / cerulean -->
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title>BSale:Weather</title>
 </head>
 <body onload="santiago()">
     <header class= "container container-fluid center col-12">
-        <article class="container mt-3 col-3">
-            <h1>BSALE Weather</h1>
-        </article>
+                <img src="./img/bsale.png" alt="">
+
+                <h1 id="txt-titulo">Weather</h1>
+
     </header>
-    <section class="container container-fluid col-8">
+    <section id="sect-principal">
 
-        <contenedor class="container col-4 c-left">
-            <article id="imgleft" class="container center col-10">
-            </article>
-        </contenedor>
+        <section class="container col-12 container-fluid">
 
-        <contenedor class="container col-8 c-right">
+            <section class="container container-fluid col-8">
+                
+                
+                <contenedor class="container col-4 mt-4 c-left">
+                    <article id="imgleft" class="container center col-12">
+                        
+                        <div class="container img-phone">
+                            <img class="img-phone" src="./img/phone.png">
+                        </div>
 
-            <article class="container entrada mt-2 center col-12">
-                <div class="entradas">
-                    <input id="ciudad" type="text" class="form-control col-10" placeholder="Indique una ciudad..." aria-label="Username" aria-describedby="basic-addon1">
-                    <input id="boton" type="submit" class="btn btn-success btn-block col-10" value="Enviar">
-                </div>
-            </article>
-
-            <article id="infowheater"class="container info center col-12">
-            </article>
-
-            <article class="container center col-12">
-                <button class="btn btn-primary">Agregar >>></button>
-            </article>
-
-        </contenedor>
+                    </article>
+                </contenedor>
 
 
-    </section>
-    <aside class="col-4">
-        <article class="container mt-2  col-11">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Ciudad</th>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Hora</th>
-                    <th scope="col">Temperatura</th>
-                  </tr>
-                </thead>
-                <tbody id="tabla">
+                <contenedor class="container container-fluid col-8 mt-2 c-right">
     
-                </tbody>
-              </table>
-        </article>
-    </aside>
+                    <article class="container entrada mt-2 center col-12">
+                        <div class="entradas">
+                            <input id="ciudad" type="text" class="form-control col-10" placeholder="Indique una ciudad..." aria-label="Username" aria-describedby="basic-addon1">
+                            <input id="boton" type="submit" class="btn btn-primary btn-block col-10" value="Consultar">
+                        </div>
+                    </article>
+        
+                    <div class="container col-12">
+                        <article id="infowheater"class="sect-gradient container info center col-12 mt-2">
+                        </article>
+                    </div>    
+                </contenedor>
+            </section>
+
+            <aside class="col-4 mt-2">
+                <article class="container mt-2  col-11 sect-gradient">
+                    <h4>Ciudades favoritas</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ciudad</th>
+                                <th scope="col">Fecha Hora</th>
+                                <th scope="col">Temperatura</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla">
+                            
+                        </tbody>
+                    </table>
+                </article>
+            </aside>
+
+
+        </section>
+    </section>
     <footer class="container container-fluid col-12">
-        <h1>FOOTER</h1>
+        
+        <div class="descarga container col-4">
+
+            <div class="img-container">
+                <img src="./img/stores.png" alt="">
+            </div>
+    
+        </div>
+
+        <div class="nosotros container col-4">
+            <nav class="nav flex-column">
+                <a class="nav-link text-light" href="#">Nosotros</a>
+                <a class="nav-link text-light" href="#">Blog</a>
+                <a class="nav-link text-light" href="#">Preguntas Frecuentes</a>
+              </nav>
+              <nav class="nav flex-column">
+                <a class="nav-link text-light" href="#">Privacidad</a>
+                <a class="nav-link text-light" href="#">Terminos de uso</a>
+                <a class="nav-link text-light" href="#">API documents</a>
+              </nav>
+        </div>
+
+        <div class="contacto container col-4">
+            <form>
+                <div class="form-group">
+                    <label class="text-light"for="exampleFormControlTextarea1">Contáctanos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="usuario@bsale.cl" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+                    </div>
+                  </div>
+              </form>
+        </div>
+
+        <div class="derechos col-12">
+            <p>Todos los derechos reservados 2020 - BSale Weather®</p>
+            <p>| Desarrollado por Henry D'Santiago para BSale.cl</p>
+        </div>
+
     </footer>
     <script src="scripts.js"></script>
+    <script src="fecha.js"></script>
 </body>
 </html>
