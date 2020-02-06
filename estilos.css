@@ -92,6 +92,7 @@ article .boton{
 
 aside{
     /* background-color: chartreuse; */
+    max-height: 70%;
 }
 
 td,th,thead {
