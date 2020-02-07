@@ -95,6 +95,10 @@ aside{
     max-height: 70%;
 }
 
+aside .sect-gradient {
+    padding-top: 10px;
+}
+
 td,th,thead {
     text-align: center;
     align-items: center;
@@ -132,8 +136,6 @@ input{
     align-items: center;
     align-content: center;
 }
-
-
 
 aside h4{
     text-align: center;
@@ -175,13 +177,6 @@ footer{
     background-color: rgb(125, 150, 254);
 }
 
-.descarga{
-    display: flex;
-    align-content: flex-start;
-    text-align: center;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
 .nosotros{
     margin-top: 20px;
     display: flex;
@@ -226,5 +221,9 @@ footer .derechos p{
 
 table th,td{
     font-size: 15px;
+}
+
+#phoneapp{
+    visibility: hidden;
 }
 

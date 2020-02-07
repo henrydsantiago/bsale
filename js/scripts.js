@@ -5,7 +5,6 @@ var tabladatos =  document.querySelector('#tabla');
 var informacion =  document.querySelector('#infowheater');
 var principal =  document.querySelector('#sect-principal');
 
-
 var cors= 'https://cors-anywhere.herokuapp.com/'
 
 /*              OpenWeather */
@@ -15,12 +14,9 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?q=';
 var ciudad = document.querySelector('#ciudad');
 var imgleft = document.querySelector('#imgleft');
 
-MediaKeySystemAccess
-
-
 
 function santiago() {
-    ciudad.value = "TORONTO";
+    ciudad.value = "SANTIAGO";
     let peticion =  cors + url + ciudad.value + '&appid=' + appid;
     llenar(peticion);
 }
@@ -90,3 +86,12 @@ function cargarImg(t) {
     return foto;
 }
 
+$(window).scroll(function() {
+    $('#object').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideUp");
+        }
+    });
+});
