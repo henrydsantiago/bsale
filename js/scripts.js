@@ -4,8 +4,20 @@ var boton = document.querySelector('#boton');
 var tabladatos =  document.querySelector('#tabla');
 var informacion =  document.querySelector('#infowheater');
 var principal =  document.querySelector('#sect-principal');
-
 var cors= 'https://cors-anywhere.herokuapp.com/'
+
+
+
+$(window).scroll(function() {
+    $('#object').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideUp");
+        }
+    });
+});
+
 
 /*              OpenWeather */
 //var appid = '503f4878b7ed594ae3cea7720552b562'; 
@@ -51,8 +63,8 @@ function infor(element) {
     `
     <h1>${(ciudad.value.toUpperCase())}</h1>
     <p>${fh}</p>
-    <p>Temperatura: <span id="temperatura"> ${parseInt(element.temp - 273.15)} ºC</span></p>
-    <p>Sensación térmica: <span id="sensaciont">  ${parseInt(element.feels_like - 273.15)} ºC</span></p>
+    <p>Temperatura: <span id="temperatura"> &nbsp; ${parseInt(element.temp - 273.15)}ºC</span></p>
+    <p>Sensación térmica: <span id="sensaciont"> &nbsp; ${parseInt(element.feels_like - 273.15)} ºC</span></p>
     <p>T. Max:  ${parseInt(element.temp_max - 273.15)} ºC</p>
     <p>T. Min:  ${parseInt(element.temp_min - 273.15)} ºC</p>
     <p>Presión: ${element.pressure}</p>
@@ -86,12 +98,4 @@ function cargarImg(t) {
     return foto;
 }
 
-$(window).scroll(function() {
-    $('#object').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-            $(this).addClass("slideUp");
-        }
-    });
-});
+

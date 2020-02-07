@@ -1,4 +1,22 @@
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+td,th,thead {
+    text-align: center;
+    align-items: center;
+}
+
+table th,td{
+    font-size: 15px;
+}
+
+
+
+/*                      Header               */
 header{
     background-color: rgb(125, 150, 254);
     display: flex;
@@ -14,10 +32,8 @@ header h1{
     color: white;
 }
 
-body{
-    display: flex;
-    flex-wrap: wrap;
-}
+/*                      Section                */
+
 section{
    /*  background-color: blue; */
     display: flex;
@@ -34,7 +50,6 @@ section{
     animation: movimiento 30s infinite linear alternate;
     min-height: 450px;
 }
-
 @keyframes movimiento{
     from{
         background-position: left;
@@ -75,7 +90,11 @@ aside .sect-gradient{
     z-index: 3;
 }
 
+/*      RIGHT    */
 
+#phoneapp{
+    visibility: hidden;
+}
 .container .c-right {
     /* background-color: yellow; */
     display: flex;
@@ -90,6 +109,7 @@ article .boton{
 
 }
 
+/*                      ASIDE                */
 aside{
     /* background-color: chartreuse; */
     max-height: 70%;
@@ -99,15 +119,7 @@ aside .sect-gradient {
     padding-top: 10px;
 }
 
-td,th,thead {
-    text-align: center;
-    align-items: center;
-}
 
-footer{
-    /* background-color: brown; */
-    text-align: center;
-}
 
 .container .entradas {
     display: flex;
@@ -171,10 +183,29 @@ aside h4{
     font-style: oblique;
 }
 
+
+
+header article img{
+    width: 70px;
+    height: 40px;
+}
+
+/*              Footer           */
 footer{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(125, 150, 254);
+    text-align: center;
+}
+
+footer .img-container {
+    width: 100%;
+    height: 150px;
+}
+
+footer .img-container img{
+    width: 100%;
+    height: 120%;
 }
 
 .nosotros{
@@ -190,26 +221,7 @@ footer{
     background-color: rgb(125, 150, 254);
     display: flex;
     justify-content: center;
-}
-
-header article img{
-    width: 70px;
-    height: 40px;
-}
-
-footer .img-container {
-    width: 100%;
-    height: 150px;
-}
-
-footer .img-container img{
-    width: 100%;
-    height: 120%;
-}
-
-.contacto{
-    margin-top: 25px;
-}
+} 
 
 footer .derechos p{
     font-family: Arial, Helvetica, sans-serif;
@@ -219,11 +231,16 @@ footer .derechos p{
     padding: 0;
 }
 
-table th,td{
-    font-size: 15px;
+
+footer h3{
+    font-weight: bold;
 }
 
-#phoneapp{
-    visibility: hidden;
+footer h4{
+    font-size: 20px;
+    font-style: italic;
 }
 
+.contacto{
+    margin-top: 25px;
+}
