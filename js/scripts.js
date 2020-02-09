@@ -95,6 +95,8 @@ function pintar(lugar,foto) {
 function cargarImg(t) {
     let foto;
     foto = parseInt(t/5);
+    if(foto<0){foto=0;};
+    if(foto>6){foto=6;};
     return foto;
 }
 

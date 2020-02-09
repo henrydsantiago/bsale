@@ -928,8 +928,8 @@ pullDown
 	animation-name: pullDown;
 	-webkit-animation-name: pullDown;	
 
-	animation-duration: 1.1s;	
-	-webkit-animation-duration: 1.1s;
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
 
 	animation-timing-function: ease-out;	
 	-webkit-animation-timing-function: ease-out;	
@@ -997,8 +997,8 @@ stretchLeft
 	animation-name: stretchLeft;
 	-webkit-animation-name: stretchLeft;	
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
 
 	animation-timing-function: ease-out;	
 	-webkit-animation-timing-function: ease-out;	
